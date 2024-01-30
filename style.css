@@ -1,0 +1,134 @@
+@font-face {
+    font-family: Lexend Deca;
+    src: url('./fonts/LexendDeca-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Big Shoulders;
+    src: url('./fonts/BigShouldersDisplay-VariableFont_wght.ttf');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#fundo {
+    background-color: #F2F2F2;
+}
+
+#principal {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 100px auto 0;
+    padding: 20px;
+
+}
+
+.cards {
+    max-width: 250px;
+    max-height: 100%;
+    padding: 35px;
+}
+
+.cards .logo {
+    width: 48px;
+    height: 28px;
+    margin-bottom: 20px;
+}
+
+.cards h1 {
+    font-size: 22pt;
+    color: #f3f3f3;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: Big Shoulders;
+}
+
+.cards p {
+    margin-bottom: 60px;
+    font-size: 9pt;
+    line-height: 1.6em;
+    color: #d8d5d5dc;
+    font-family: Lexend Deca;
+}
+
+.cards button {
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 9pt;
+    font-weight: 700;
+    border: 1px solid #00000000;
+    width: 110px;
+    cursor: pointer;
+}
+
+
+
+#card1 {
+    background-color: #E28525;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#card2 {
+    background-color: #016972;
+}
+
+#card3 {
+    background-color: #00403F;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.cards #button1 {
+    color: #CBAB73;
+
+}
+.cards #button1:hover {
+    color: #FFF;
+    border: 1px solid #FFF;
+    background-color: #E28525;
+
+}
+
+.cards #button2 {
+    color: #45898d;
+
+}
+.cards #button2:hover {
+    color: #FFF;
+    border: 1px solid #FFF;
+    background-color: #016972;
+
+}
+
+.cards #button3 {
+    color: #233E3D;
+
+}
+.cards #button3:hover {
+    color: #FFF;
+    border: 1px solid #FFF;
+    background-color: #00403F;
+
+}
+
+@media(max-width: 520px) {
+
+    #principal {
+        flex-wrap: wrap;
+    }
+
+    #card1 {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    #card3 {
+
+        border-radius: 0px 0px 10px 10px;
+    }
+}
